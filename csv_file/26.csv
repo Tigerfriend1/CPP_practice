@@ -1,0 +1,42 @@
+2023-03-13T19:14:34.190+09:00,tigerfriend,Action,Clear Tracking Log,,,,,-1,-1,
+2023-03-13T19:15:22.000+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,10,Changes
+2023-03-13T19:15:24.057+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,13,Changes
+2023-03-13T19:15:28.057+09:00,tigerfriend,Action,EditorLeft,C__,Editor,/Users/tigerfriend/C++/main.cpp,,7,15,Changes
+2023-03-13T19:15:28.448+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,7,14,Changes
+2023-03-13T19:15:28.562+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,7,13,Changes
+2023-03-13T19:15:28.706+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,7,12,Changes
+2023-03-13T19:15:29.105+09:00,tigerfriend,Action,EditorUp,C__,Editor,/Users/tigerfriend/C++/main.cpp,,7,11,Changes
+2023-03-13T19:15:29.615+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,6,11,Changes
+2023-03-13T19:15:29.721+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,6,10,Changes
+2023-03-13T19:15:54.152+09:00,tigerfriend,Action,EditorCut,C__,Editor,/Users/tigerfriend/C++/main.cpp,,15,32,Changes
+2023-03-13T19:15:56.014+09:00,tigerfriend,Action,EditorPaste,C__,Editor,/Users/tigerfriend/C++/main.cpp,,10,8,Changes
+2023-03-13T19:15:58.428+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,8,Changes
+2023-03-13T19:15:59.531+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,8,Changes
+2023-03-13T19:16:02.122+09:00,tigerfriend,Action,EditorRight,C__,Editor,/Users/tigerfriend/C++/main.cpp,,12,13,Changes
+2023-03-13T19:16:02.513+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,12,14,Changes
+2023-03-13T19:16:02.682+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,12,13,Changes
+2023-03-13T19:16:02.843+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,12,12,Changes
+2023-03-13T19:16:11.260+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,20,Changes
+2023-03-13T19:16:17.388+09:00,tigerfriend,Action,EditorEnter,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,5,Changes
+2023-03-13T19:16:22.269+09:00,tigerfriend,Action,EditorChooseLookupItem,C__,Editor,/Users/tigerfriend/C++/main.cpp,,1,12,Changes
+2023-03-13T19:16:44.409+09:00,tigerfriend,Action,EditorChooseLookupItem,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,11,Changes
+2023-03-13T19:16:46.757+09:00,tigerfriend,Action,EditorRight,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,18,Changes
+2023-03-13T19:16:55.659+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,16,8,Changes
+2023-03-13T19:16:56.023+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,16,8,Changes
+2023-03-13T19:16:59.310+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,16,18,Changes
+2023-03-13T19:17:05.028+09:00,tigerfriend,Action,Debug,C__,Editor,/Users/tigerfriend/C++/main.cpp,,16,27,Changes
+2023-03-13T19:17:05.785+09:00,tigerfriend,Execution,Debug:'CMake Application: C__':,C__,Editor,/Users/tigerfriend/C++/main.cpp,,16,27,Changes
+2023-03-13T19:17:52.356+09:00,tigerfriend,Action,ToggleLineBreakpoint,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,4,Changes
+2023-03-13T19:17:53.994+09:00,tigerfriend,Action,Debug,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,4,Changes
+2023-03-13T19:17:54.318+09:00,tigerfriend,Execution,Debug:'CMake Application: C__':,C__,Editor,/Users/tigerfriend/C++/main.cpp,,14,4,Changes
+2023-03-13T19:18:36.375+09:00,tigerfriend,Action,ToggleLineBreakpoint,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,0,Changes
+2023-03-13T19:18:39.752+09:00,tigerfriend,Action,Debug,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,0,Changes
+2023-03-13T19:18:41.730+09:00,tigerfriend,Execution,Debug:'CMake Application: C__':,C__,Editor,/Users/tigerfriend/C++/main.cpp,,13,0,Changes
+2023-03-13T19:18:56.301+09:00,tigerfriend,Action,StepInto,C__,Debug,/Users/tigerfriend/C++/main.cpp,,9,0,Changes
+2023-03-13T19:19:00.305+09:00,tigerfriend,Action,StepInto,C__,Debug,/Users/tigerfriend/C++/main.cpp,,11,0,Changes
+2023-03-13T19:19:21.223+09:00,tigerfriend,Action,StepInto,C__,Debug,/Users/tigerfriend/C++/main.cpp,,12,0,Changes
+2023-03-13T19:19:25.411+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,22,Changes
+2023-03-13T19:19:25.552+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,21,Changes
+2023-03-13T19:19:25.706+09:00,tigerfriend,Action,EditorBackSpace,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,20,Changes
+2023-03-13T19:19:31.919+09:00,tigerfriend,Action,Run,C__,Editor,/Users/tigerfriend/C++/main.cpp,,8,19,Changes
+2023-03-13T19:19:34.196+09:00,tigerfriend,Execution,Run:'CMake Application: C__':/Users/tigerfriend/C++/cmake-build-debug/C__,C__,Editor,/Users/tigerfriend/C++/main.cpp,,10,14,Changes
