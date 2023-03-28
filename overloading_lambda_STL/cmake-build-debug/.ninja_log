@@ -1,0 +1,10 @@
+# ninja log v5
+1	53	1679921260664666969	build.ninja	f51227055e511d71
+14	451	1679907387346787790	CMakeFiles/overloading_lambda_STL.dir/function_overloading.cpp.o	5abab73c71d96ce8
+4	293	1679920578569395842	CMakeFiles/overloading_lambda_STL.dir/stl_lambda.cpp.o	8e2f1ce4b9bee17c
+293	316	1679920578594822191	overloading_lambda_STL	e2d7a0603cac27a3
+0	59	1679921260664666969	build.ninja	f51227055e511d71
+0	357	1679921261032812605	CMakeFiles/overloading_lambda_STL.dir/lambda.cpp.o	1b849942b5904672
+357	396	1679921261074108150	overloading_lambda_STL	b5d4ac6f1f90643c
+4	277	1679921287643574636	CMakeFiles/overloading_lambda_STL.dir/lambda.cpp.o	1b849942b5904672
+277	303	1679921287671970967	overloading_lambda_STL	b5d4ac6f1f90643c
