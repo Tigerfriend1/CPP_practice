@@ -25,6 +25,9 @@ int main() {
             Point center{a,b};
             create_circle(center,r);
         }
+        else if(str=="SORT"){
+            sort_shapes();
+        }
     }
 
 

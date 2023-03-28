@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
+#include <algorithm>
+#include <memory>
 #endif //SHAPE_SHAPE_H
 
 enum class ShapeType{RECT, CIRCLE};
