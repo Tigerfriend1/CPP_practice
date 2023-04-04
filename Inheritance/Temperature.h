@@ -1,0 +1,8 @@
+//
+// Created by 김태경 on 2023/04/03.
+//
+
+#ifndef INHERITANCE_TEMPERATURE_H
+#define INHERITANCE_TEMPERATURE_H
+
+#endif //INHERITANCE_TEMPERATURE_H
