@@ -3,6 +3,7 @@
 //
 #include "Cart.h"
 #include "Item.h"
+#include "Checkout.h"
 #include <iostream>
 #include <algorithm>
 void Cart::addItem(const Item &item) {
@@ -18,8 +19,8 @@ void Cart::deleteItem(int id) {
 }
 
 int Cart::checkout() {
-    Checkout
-    return 0;
+    Checkout c;
+    return c.calculateTotalPrice(items.begin(),items.end());
 }
 
 void Cart::viewItemDetails(int id, ostream &out) const {
@@ -31,6 +32,7 @@ void Cart::viewItemDetails(int id, ostream &out) const {
     }
     out<<"Name: "<<i->getName()<<endl;
     out<<"Quantity: "<<i->getQuantity()<<endl;
+    out<<"Price: "<<i->getPrice()<<endl;
 }
 
 const_iterator Cart::cbegin() const {
