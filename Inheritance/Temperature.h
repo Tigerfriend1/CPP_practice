@@ -25,8 +25,6 @@ private:
 private:
     void convertToCelsius();
     void convertToFahrenheit();
-
-
 public:
      Temperature(double temp, SCALE scale=CELSIUS);
      Temperature add(Temperature other);

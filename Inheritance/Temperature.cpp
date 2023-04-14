@@ -1,7 +1,5 @@
-
 #include "Temperature.h"
 using namespace std;
-
 
 
 Temperature::Temperature(double temp, SCALE scale) {
@@ -9,47 +7,60 @@ Temperature::Temperature(double temp, SCALE scale) {
     this->scale=scale;
 }
 
-Temperature Temperature::add(Temperature other) {
 
-    if (this->scale==CELSIUS){ //섭씨로 리턴해야함.
-        if (other.scale==CELSIUS) {
-            double temp = this->temperature + other.temperature;
-            Temperature a = *new Temperature(temp, scale = CELSIUS);
-            return a;
+
+Temperature Temperature::add(Temperature other){
+    cout<<"other="<<other.scale<<endl;
+    double temp;
+    if (this->scale==CELSIUS){
+
+        if (other.scale==CELSIUS){
+            temp=this->temperature+other.temperature;
         }
         else{
             other.convertToCelsius();
-            double temp = this->temperature + other.temperature;
-            Temperature a = *new Temperature(temp, scale = CELSIUS);
-            return a;
+            temp=this->temperature+other.temperature;
         }
+        Temperature a = *new Temperature(temp,scale=CELSIUS);
+        return a;
     }
     else{
-        if (other.scale==FAHRENHEIT) {
-            double temp = this->temperature + other.temperature;
-            Temperature a = *new Temperature(temp, scale = FAHRENHEIT);
-            return a;
+        if (other.scale==FAHRENHEIT){
+            temp=this->temperature+other.temperature;
         }
         else{
             other.convertToFahrenheit();
-            double temp = this->temperature + other.temperature;
-            Temperature a = *new Temperature(temp, scale = FAHRENHEIT);
-            return a;
+            temp=this->temperature+other.temperature;
         }
+        Temperature a = *new Temperature(temp, scale=FAHRENHEIT);
+        return a;
     }
 
+
 }
 
-void Temperature::convertToCelsius() {
-    this->temperature= (this->temperature-32)*5/9;
+string Temperature::print() const{
+    stringstream ss;
+    ss<<fixed;
+    ss<<setprecision(1);
+    cout<<"Print temp"<<temperature<<" "<<scale<<endl;
+    if (this->scale==CELSIUS){
+        ss<<temperature<<" C"<<endl;
+    }
+    else{
+        ss<<temperature<<" F"<<endl;
+    }
+    return ss.str();
+}
+
+void Temperature::convertToCelsius(){
+    this->temperature=(this->temperature-32)*5/9;
     this->scale=CELSIUS;
 }
-
-void Temperature::convertToFahrenheit() {
-    this->temperature= (this->temperature*1.8)+32;
+void Temperature::convertToFahrenheit(){
+    this->temperature=this->temperature*9/5+32;
     this->scale=FAHRENHEIT;
 }
-
 
 SCALE getScale(char scale) {
     return scale == 'C' ? CELSIUS : FAHRENHEIT;
@@ -62,17 +73,6 @@ Temperature createTemperatureFromKeyboard(){
     return Temperature {degree, getScale(scale)};
 }
 
-string Temperature::print() const{
-    stringstream ss;
-    ss << fixed;
-    ss << setprecision(1);
-    if (this->scale == FAHRENHEIT) {
-        ss << this->temperature << "F\n";
-    } else {
-        ss << this->temperature << "C\n";
-    }
-    return ss.str();
-}
 
 int main() {
     Temperature t1 = createTemperatureFromKeyboard();
