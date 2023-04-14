@@ -1,4 +1,6 @@
-
+//
+// Created by Taeyeon Kim on 15/12/2021.
+//
 
 #ifndef WEEK10_TICKETSELLER_H
 #define WEEK10_TICKETSELLER_H

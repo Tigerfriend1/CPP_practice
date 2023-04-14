@@ -1,7 +1,10 @@
+//
+// Created by Taeyeon Kim on 15/12/2021.
+//
 
 #include <memory>
-#include "Audience.h"
-#include "Theater.h"
+#include "oo/Audience.h"
+#include "oo/Theater.h"
 
 std::vector<Ticket> createTicket();
 

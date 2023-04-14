@@ -1,3 +1,6 @@
+//
+// Created by Taeyeon Kim on 15/12/2021.
+//
 
 #ifndef WEEK10_THEATER_H
 #define WEEK10_THEATER_H
