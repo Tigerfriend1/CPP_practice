@@ -1,6 +1,3 @@
-//
-// Created by Taeyeon Kim on 11/12/2021.
-//
 
 #ifndef WEEK10_TICKET_H
 #define WEEK10_TICKET_H

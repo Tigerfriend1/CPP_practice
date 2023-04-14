@@ -1,12 +1,10 @@
-//
-// Created by Taeyeon Kim on 15/12/2021.
-//
 
 #ifndef WEEK10_TICKETSELLER_H
 #define WEEK10_TICKETSELLER_H
 //std::cout << "TicketSeller > getTicketOffice() ticketOffice " << &ticketOffice << " " << ticketOffice.remainingTicket() << std::endl;
 
 #include "TicketOffice.h"
+#include "Audience.h"
 
 class TicketSeller {
 public:

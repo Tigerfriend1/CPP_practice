@@ -1,20 +1,29 @@
-//
-// Created by Taeyeon Kim on 12/12/2021.
-//
 
 #ifndef WEEK10_AUDIENCE_H
 #define WEEK10_AUDIENCE_H
 
-#include "Bag.h"
+#include "Membership.h"
+#include "Ticket.h"
 
 class Audience {
 public:
-    Audience() {}
-    Audience(Bag bag) : bag(bag) {}
+    //Audience() {};
+    Audience(long amount, Membership* membership) : amount(amount), membership(membership)  {}
     long buy (Ticket ticket) {
-        return bag.hold(ticket);
+        if (membership->isAvailable()){
+            membership->use();
+            return 0;
+        }
+        else{ //should buy
+            amount-=ticket.getFee();
+            return ticket.getFee();
+        }
+    }
+    Membership* getAudiencemember(){ //정상작동확인용
+        return membership;
     }
 private:
-    Bag bag;
+    long amount;
+    Membership* membership;
 };
 #endif //WEEK10_AUDIENCE_H
