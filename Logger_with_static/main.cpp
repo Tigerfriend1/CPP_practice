@@ -15,7 +15,7 @@ int main() {
         case 3: Logger::setLogLevel(ERROR); break;
         default: Logger::setLogLevel(DEBUG); break;
     }
-
+    //static 선언을 했기 때문에 함수를 호출할 때, 객체를 생성하지 않아도 호출할 수 있다.
     Logger::setLogLevel(level);
     Logger::debug("This is a debug message", TAG);
     Logger::info("This is an info message", TAG);
