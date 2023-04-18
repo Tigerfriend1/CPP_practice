@@ -10,7 +10,7 @@ double Excel::average(int fromRow, int fromCol, int toRow, int toCol) const {
     double val=0;
     for (int i=0; i<(toRow-fromRow+1); i++){
         Cell a=this->data[fromRow+i][fromCol];
-        if (a.getType()==INT){
+        if (a.getType()==INT){ //최대한 private보다는 함수호출로 값에 접근
             val+=a.getIntVal();
         }
         else if(a.getType()==DOUBLE){
