@@ -9,22 +9,10 @@
 class Vehicle {
 public:
     // your code here
-    Vehicle(){
-        this->name = "Model Y LR";
-        this->range = 511;
-        this->hasFDS = false;
-        this -> batteryCapacity=85;
-    };
-    //Vehicle(std::string name, int range, float batteryCapacity) : name(name), range(range), batteryCapacity(batteryCapacity){};
-    Vehicle(std::string name, int range, float batteryCapacity) {
-        this->name=name;
-        this->range=range;
-        this->hasFDS = false;
-        this->batteryCapacity=batteryCapacity;
-    };
 
-
-    Vehicle(std::string name, int range, bool hasFDS, float batteryCapacity) : name(name), range(range), hasFDS(hasFDS), batteryCapacity(batteryCapacity){};
+    Vehicle(): name("Model Y LR"), range(511), hasFDS(false), batteryCapacity(85){};
+    Vehicle(std::string name, int range,bool hasFDS, float batteryCapacity) : name(name), range(range), hasFDS(hasFDS), batteryCapacity(batteryCapacity){};
+    Vehicle(std::string name, int range, float batteryCapacity) : name(name), range(range), batteryCapacity(batteryCapacity){hasFDS= false;};
 
     void autoPilot(bool onOff);
     void runFDS() const;
