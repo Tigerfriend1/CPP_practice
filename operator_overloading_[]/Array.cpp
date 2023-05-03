@@ -3,13 +3,9 @@
 //
 
 #include "Array.h"
-
+#include <algorithm>
 Array::Array(std::initializer_list<int> args, size_t size) : data(new int[size]),_size(size) {
-    size_t i=0;
-    for (auto a : args){
-        data[i]=a;
-        i++;
-    }
+    std::copy(args.begin(),args.end(),data.get());
 }
 
 int &Array::operator[](int index) {
