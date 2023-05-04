@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <iostream>
+#include <initializer_list>
 
 class matrix{
 private:
@@ -16,14 +17,21 @@ private:
     int col = 0;
 public:
     matrix() : row(0), col(0), data(nullptr){};
-    matrix(int row, int col);
+    matrix(int row, int col):data(new int[2]),row(row),col(col){};
+    //matrix(const std::initializer_list<int> lst){};
     //matrix(const matrix &a);
     matrix(const matrix& a, const matrix& b);
     matrix& inverse();
     matrix& operator+(const matrix& other)const;
     friend std::ostream& operator<<(std::ostream& out, const matrix& a){
-        out<<"|"<<a.data[0]<<" "<<a.data[1]<<"|"<<std::endl;
-        out<<"|"<<a.data[2]<<" "<<a.data[3]<<"|"<<std::endl;
+        if (a.data== nullptr){
+            out<<"||"<<std::endl;
+        }
+        else{
+            out<<"|"<<a.data[0]<<" "<<a.data[1]<<"|"<<std::endl;
+            out<<"|"<<a.data[2]<<" "<<a.data[3]<<"|"<<std::endl;
+        }
+
         return out;
     }
 };
