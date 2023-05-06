@@ -33,6 +33,19 @@ matrix &matrix::operator+(const matrix &other) const {
     return *a;
 }
 
+std::ostream &operator<<(std::ostream &out, const matrix &a) {
+
+    if (a.data== nullptr){
+        out<<"||"<<std::endl;
+    }
+    else{
+        out<<"|"<<a.data[0]<<" "<<a.data[1]<<"|"<<std::endl;
+        out<<"|"<<a.data[2]<<" "<<a.data[3]<<"|"<<std::endl;
+    }
+
+    return out;
+}
+
 //matrix::matrix(const std::initializer_list<int> lst) {
 //    if (lst.size() < 1) {
 //        throw std::invalid_argument("Cannot create matrix with empty initializer list");
