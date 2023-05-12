@@ -16,9 +16,9 @@ private:
     int row = 0;
     int col = 0;
 public:
-    matrix() : row(0), col(0), data(nullptr){};
-    matrix(int row, int col):data(new int[2]),row(row),col(col){};
-    //matrix(const std::initializer_list<int> lst){};
+    //matrix() : row(0), col(0), data(nullptr){};
+    //matrix(int row, int col):data(new int[2]),row(row),col(col){};
+    matrix(std::initializer_list<std::initializer_list<int>> lst);
     //matrix(const matrix &a);
     matrix(const matrix& a, const matrix& b);
     matrix& inverse();
@@ -27,5 +27,5 @@ public:
 };
 
 std::ostream& operator<<(std::ostream& out, const matrix& a);
-
+//stringstream end
 #endif //MATRIX_OPERATOR_OVERLOADING_MATRIX_H

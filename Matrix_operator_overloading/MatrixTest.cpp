@@ -21,7 +21,7 @@ int main(){
     print_matrix("m4", m4);
     print_matrix("m4.inverse", m4.inverse());
 
-    matrix m5 ;
+    matrix m5 {{}};
     print_matrix("m5", m5);
     print_matrix("m5.inverse", m5.inverse());
 
