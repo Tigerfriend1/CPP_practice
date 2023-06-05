@@ -10,23 +10,15 @@
 #include <array>
 #include <optional>
 
-template <typename T, size_t N>
-auto myFind(const std::array<T, N>& array, const T& value) {
-    for (size_t i = 0; i < N; i++) {
-        if (array[i] == value)
-            return array + i;
+template <typename T, std::size_t N>
+typename std::array<T, N>::const_iterator myFind(const std::array<T, N>& arr, const T& value) {
+    for (auto it = arr.begin(); it != arr.end(); ++it) {
+        if (*it == value) {
+            return it;
+        }
     }
-    return std::end(array); // 원소를 찾지 못한 경우 T 타입의 기본값을 반환합니다.
+    return arr.end();
 }
-
-//template <typename T, size_t N>
-//bool myFind(const T (&array)[N], const T& value) {
-//    for (auto i = 0; i < N; i++) {
-//        if (array[i] == value)
-//            return true;
-//    }
-//    return false;
-//}
 
 class Complex {
 private:
@@ -40,6 +32,13 @@ public:
     float size() const { return sqrt(r*r + i*i) ; }
     bool operator == (const Complex& c) const {
         return ( r == c.r && i == c.i ) ; }
+
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c) ;
+
 };
+std::ostream& operator<<(std::ostream& os, const Complex& c) {
+    os << "(" << c.r << ", " << c.i << ")";
+    return os;
+}
 
 #endif //TEMPLATE_COMPLEX_COMPLEX_H
